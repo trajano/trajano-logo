@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="3.5in" height="2.0in" preserveAspectRatio="xMinYMin" viewBox="0 0 350 200"
+	version="1.1">
+
+	<defs>
+		<font-face font-family="PT Sans Caption" unicode-range="U+0-7F"
+			font-weight="normal">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/PTC55FRegular.svg#PTC55FRegular" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="PT Sans Caption" unicode-range="U+0-7F"
+			font-weight="bold">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/PTC75FBold.svg#PTC75FBold" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="MgOpen Canonica" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/MgOpenCanonicaRegular.svg#MgOpenCanonicaRegular" />
+			</font-face-src>
+		</font-face>
+	</defs>
+
+	<!-- Border used for debugging. <rect x="0" y="0" width="3.5in" height="2in" 
+		stroke="black" fill="none" stroke-width="0.01cm" /> -->
+
+	<image xlink:href="logo-with-text.svg" x="2.00in" y="0.1in"
+		width="1.40in" height="0.55in" />
+
+	<image xlink:href="qrcode-vcard.svg" x="2.25in" y="0.750in"
+		width="1.2in" height="1.2in" />
+
+	<g font-family="PT Sans Caption" font-size="10pt" fill="black">
+		<text x="0.1in" y="0.750in">
+			<tspan x="0.1in" dy="1em" font-size="12pt" font-weight="bold"
+				font-style="normal" xml:space="preserve">Archimedes Trajano</tspan>
+			<tspan x="0.1in" dy="1.4em" font-size="9pt" xml:space="preserve">IT Consultant/Founder</tspan>
+			<tspan x="0.1in" dy="3.0em">(416) 856-6655</tspan>
+			<tspan x="0.1in" dy="1.2em">www.trajano.net</tspan>
+			<tspan x="0.1in" dy="1.2em">archie@trajano.net</tspan>
+		</text>
+	</g>
+</svg>
