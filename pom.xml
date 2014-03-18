@@ -7,14 +7,14 @@
         <version>7</version>
     </parent>
     <artifactId>trajano-logo</artifactId>
-    <version>2.0.0</version>
+    <version>2.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Trajano logo</name>
     <description>Tooling used to build the logo used for the organization.</description>
     <scm>
         <connection>scm:git:https://github.com/trajano/${project.artifactId}</connection>
         <developerConnection>scm:git:ssh://git@github.com/trajano/${project.artifactId}.git</developerConnection>
-        <tag>trajano-logo-2.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
     <distributionManagement>
         <site>
@@ -228,7 +228,7 @@
                             <goal>ttf2svg</goal>
                         </goals>
                         <phase>generate-resources</phase>
-                        <configuration/>
+                        <configuration />
                     </execution>
                     <execution>
                         <id>svg-to-png</id>
@@ -236,7 +236,7 @@
                             <goal>rasterizer</goal>
                         </goals>
                         <phase>generate-resources</phase>
-                        <configuration/>
+                        <configuration />
                     </execution>
                     <execution>
                         <id>businss-cards</id>
