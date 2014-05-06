@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>net.trajano</groupId>
         <artifactId>trajano</artifactId>
-        <version>7</version>
+        <version>9-SNAPSHOT</version>
     </parent>
     <artifactId>trajano-logo</artifactId>
     <version>2.0.1-SNAPSHOT</version>
@@ -20,40 +20,37 @@
         <site>
             <id>gh-pages</id>
             <name>Trajano GitHub Pages</name>
-            <url>git:ssh://git@github.com/trajano/${project.artifactId}.git?gh-pages#</url>
+            <url>github:http://site.trajano.net/${project.artifactId}/</url>
         </site>
     </distributionManagement>
     <properties>
-        <coding-standards.version>1.1.1</coding-standards.version>
+        <jdk.version>1.6</jdk.version>
+        <surefire.version>2.17</surefire.version>
     </properties>
     <build>
         <pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>2.10</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>net.trajano</groupId>
-                            <artifactId>coding-standards</artifactId>
-                            <version>${coding-standards.version}</version>
-                        </dependency>
-                    </dependencies>
+                    <version>2.12</version>
                     <configuration>
+                        <linkXRef>true</linkXRef>
                         <configLocation>config/checkstyle-configuration.xml</configLocation>
+                        <includes>**/*.java,**/*.properties</includes>
+                        <excludes>target/**,src/test/**</excludes>
                     </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.1</version>
                     <configuration>
-                        <source>1.5</source>
-                        <target>1.5</target>
+                        <source>${jdk.version}</source>
+                        <target>${jdk.version}</target>
                     </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-failsafe-plugin</artifactId>
-                    <version>2.16</version>
+                    <version>${surefire.version}</version>
                     <executions>
                         <execution>
                             <id>integration-test</id>
@@ -113,18 +110,14 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-jxr-plugin</artifactId>
-                    <version>2.3</version>
+                    <version>2.4</version>
+                    <configuration>
+                        <linkJavadoc>true</linkJavadoc>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-pmd-plugin</artifactId>
-                    <version>3.0.1</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>net.trajano</groupId>
-                            <artifactId>coding-standards</artifactId>
-                            <version>${coding-standards.version}</version>
-                        </dependency>
-                    </dependencies>
+                    <version>3.1</version>
                     <configuration>
                         <rulesets>
                             <ruleset>/config/pmd-rules.xml</ruleset>
@@ -134,16 +127,6 @@
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>2.6</version>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-site-plugin</artifactId>
-                    <dependencies>
-                        <dependency>
-                            <groupId>net.trajano</groupId>
-                            <artifactId>coding-standards</artifactId>
-                            <version>${coding-standards.version}</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
                 <plugin>
                     <artifactId>maven-source-plugin</artifactId>
@@ -161,11 +144,11 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.16</version>
+                    <version>${surefire.version}</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-surefire-report-plugin</artifactId>
-                    <version>2.16</version>
+                    <version>${surefire.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.felix</groupId>
@@ -176,74 +159,50 @@
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
                     <version>2.5.3</version>
-                    <dependencies>
-                        <dependency>
-                            <groupId>net.trajano</groupId>
-                            <artifactId>coding-standards</artifactId>
-                            <version>${coding-standards.version}</version>
-                        </dependency>
-                    </dependencies>
-                    <configuration>
-                        <excludeFilterFile>config/findbugs-exclude-filter.xml</excludeFilterFile>
-                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.jacoco</groupId>
                     <artifactId>jacoco-maven-plugin</artifactId>
-                    <version>0.6.4.201312101107</version>
+                    <version>0.7.0.201403182114</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>prepare-agent</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
             </plugins>
         </pluginManagement>
         <plugins>
             <plugin>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>single</goal>
-                        </goals>
-                        <phase>package</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <descriptors>
-                        <descriptor>src/main/assembly/images-zip.xml</descriptor>
-                    </descriptors>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <skipIfEmpty>true</skipIfEmpty>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>net.trajano.mojo</groupId>
                 <artifactId>batik-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.0.2-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>fonts</id>
                         <goals>
                             <goal>ttf2svg</goal>
                         </goals>
-                        <phase>generate-resources</phase>
-                        <configuration />
+                        <phase>package</phase>
                     </execution>
                     <execution>
                         <id>svg-to-png</id>
                         <goals>
                             <goal>rasterizer</goal>
                         </goals>
-                        <phase>generate-resources</phase>
-                        <configuration />
+                        <phase>package</phase>
                     </execution>
                     <execution>
-                        <id>businss-cards</id>
+                        <id>business-cards</id>
                         <goals>
                             <goal>rasterizer</goal>
                         </goals>
-                        <phase>generate-resources</phase>
+                        <phase>package</phase>
                         <configuration>
                             <mimeType>application/pdf</mimeType>
                             <svgResources>
@@ -258,64 +217,44 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <phase>package</phase>
+                        <configuration>
+                            <descriptors>
+                                <descriptor>src/main/assembly/images-zip.xml</descriptor>
+                            </descriptors>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
+        <extensions>
+            <extension>
+                <groupId>net.trajano</groupId>
+                <artifactId>coding-standards</artifactId>
+                <version>1.1.2</version>
+            </extension>
+        </extensions>
     </build>
     <reporting>
         <plugins>
             <plugin>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <configuration>
-                    <linkXRef>true</linkXRef>
-                    <configLocation>config/checkstyle-configuration.xml</configLocation>
-                    <includes>**/*.java,**/*.properties</includes>
-                    <excludes>target/**,src/test/**</excludes>
-                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <configuration>
-                    <detectJavaApiLink>true</detectJavaApiLink>
-                    <detectLinks>false</detectLinks>
-                    <detectOfflineLinks>false</detectOfflineLinks>
-                    <quiet>true</quiet>
-                    <useStandardDocletOptions>true</useStandardDocletOptions>
-                    <show>private</show>
-                    <doclet>org.umlgraph.doclet.UmlGraphDoc</doclet>
-                    <docletArtifact>
-                        <groupId>org.umlgraph</groupId>
-                        <artifactId>umlgraph</artifactId>
-                        <version>5.6.6</version>
-                    </docletArtifact>
-                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <configuration>
-                    <linkJavadoc>true</linkJavadoc>
-                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <configuration>
-                    <linkXref>true</linkXref>
-                    <sourceEncoding>utf-8</sourceEncoding>
-                    <minimumTokens>100</minimumTokens>
-                    <targetJdk>1.7</targetJdk>
-                    <rulesets>
-                        <ruleset>/config/pmd-rules.xml</ruleset>
-                    </rulesets>
-                    <excluderoots>
-                        <excluderoot>src/test</excluderoot>
-                        <excluderoot>target</excluderoot>
-                    </excluderoots>
-                </configuration>
-            </plugin>
-            <plugin>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <configuration>
-                    <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
-                    <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
-                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-report-plugin</artifactId>
@@ -323,9 +262,6 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <configuration>
-                    <excludeFilterFile>config/findbugs-exclude-filter.xml</excludeFilterFile>
-                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
