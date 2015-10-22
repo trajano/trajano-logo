@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.w3.org/2000/svg http://www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd"
+		width="1500"
+		height="500"
+		preserveAspectRatio="xMinYMin"
+		viewBox="0 0 1500 500"
+		version="1.2">
+
+	<defs>
+	</defs>
+	<rect width="1500" height="500" x="0" y="0" />
+	<image fill="black" xlink:href="logo-with-white-text.svg" x="100" y="150" width="1300" height="214"/>
+</svg>
