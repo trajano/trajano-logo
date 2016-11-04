@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="8.5in" height="11in" preserveAspectRatio="xMinYMin" viewBox="0 0 1700 2200"
+	version="1.1">
+
+	<image xlink:href="business-card-sheet.svg" x="0" y="0"
+		width="1700" height="2200" />
+
+<g stroke="#CCCCCC" stroke-width="1" vector-effect="non-scaling-stroke">
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+<line x1="88" y1="148" x2="98" y2="148" />
+
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+<line x1="98" y1="138" x2="98" y2="148" />
+
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+<line x1="798" y1="558" x2="798" y2="548" />
+
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+<line x1="808" y1="548" x2="798" y2="548" />
+
+</g>
+
+<!--
+	<image xlink:href="business-card-front.svg" x="98" y="148"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="898" y="148"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="98" y="648"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="898" y="648"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="98" y="1148"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="898" y="1148"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="98" y="1648"
+		width="700" height="400" />
+
+	<image xlink:href="business-card-front.svg" x="898" y="1648"
+		width="700" height="400" />
+-->
+
+</svg>
