@@ -65,8 +65,10 @@
 	<!-- Bottom fill, but expand past the borders a bit to allow for bleed -->
 	<rect x="-20" y="124" width="390" height="100" fill="#216978" />
 
-	<image xlink:href="logo-with-white-text.svg" x="216" y="133.5"
-		width="121.5" height="55" />
+	<g transform="translate(216)">
+		<image xlink:href="logo-with-white-text.svg" y="133.5" width="121.5"
+			height="55" />
+	</g>
 
 	<g font-family="Roboto-Thin" font-size="36pt" fill="black">
 		<text x="12.5" y="80">archie</text>
@@ -75,18 +77,21 @@
 		<text x="12.5" y="115">Archimedes Trajano</text>
 	</g>
 
-	<g font-family="Roboto-Regular" font-size="10pt" fill="white">
-		<text y="145">
-			<tspan x="34.5">416-856-6655</tspan>
-			<tspan x="34.5" dy="1.5em">archie@trajano.net</tspan>
-			<tspan x="34.5" dy="1.5em">www.trajano.net</tspan>
-		</text>
-	</g>
-	<g font-family="MaterialDesignIcons" font-size="10pt" fill="white">
-		<text y="145">
-			<tspan x="12.5">&#xF120;</tspan>
-			<tspan x="12.5" dy="1.5em">&#xF1F0;</tspan>
-			<tspan x="12.5" dy="1.5em">&#xF59F;</tspan>
+	<g transform="translate(12.5, 145)">
+		<text font-family="MaterialDesignIcons" font-size="10pt" fill="white">
+			<tspan x="0">
+				&#xF120;
+				<tspan font-family="Roboto-Regular" dx="3">416-856-6655</tspan>
+			</tspan>
+			<tspan x="0" dy="1.5em">
+				&#xF1F0;
+				<tspan font-family="Roboto-Regular" dx="3">archie@trajano.net
+				</tspan>
+			</tspan>
+			<tspan x="0" dy="1.5em">
+				&#xF59F;
+				<tspan font-family="Roboto-Regular" dx="3">www.trajano.net</tspan>
+			</tspan>
 		</text>
 	</g>
 </svg>
