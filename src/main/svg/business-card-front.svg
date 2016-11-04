@@ -45,9 +45,10 @@
 					xlink:href="../../../target/generated-resources/ttf2svg/MgOpenCanonicaRegular.svg#MgOpenCanonicaRegular" />
 			</font-face-src>
 		</font-face>
-		<font-face font-family="FontAwesome">
+		<font-face font-family="MaterialDesignIcons">
 			<font-face-src>
-				<font-face-uri xlink:href="fontawesome-webfont.svg#FontAwesome" />
+				<font-face-uri
+					xlink:href="materialdesignicons-webfont.svg#Material Design Icons" />
 			</font-face-src>
 		</font-face>
 	</defs>
@@ -68,13 +69,21 @@
 	</g>
 
 	<g font-family="Roboto-Light" font-size="10pt" fill="white">
-		<text x="12.5" y="145">
-			<tspan x="12.5" font-family="FontAwesome">&#xf095;</tspan>
+		<text y="145">
 			<tspan x="34.5">416-856-6655</tspan>
-			<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf003;</tspan>
-			<tspan x="34.5">archie@trajano.net</tspan>
-			<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf0ac;</tspan>
-			<tspan x="34.5">www.trajano.net</tspan>
+			<tspan x="34.5" dy="1.5em">archie@trajano.net</tspan>
+			<tspan x="34.5" dy="1.5em">www.trajano.net</tspan>
+		</text>
+	</g>
+	<!-- <g font-family="FontAwesome" font-size="10pt" fill="white"> <text y="145" 
+		text-anchor="middle"> <tspan x="12.5" font-family="FontAwesome">&#xf095;</tspan> 
+		<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf003;</tspan> <tspan 
+		x="12.5" dy="1.5em" font-family="FontAwesome">&#xf0ac;</tspan> </text> </g> -->
+	<g font-family="MaterialDesignIcons" font-size="10pt" fill="white">
+		<text y="145">
+			<tspan x="12.5">&#xF120;</tspan>
+			<tspan x="12.5" dy="1.5em">&#xF1F0;</tspan>
+			<tspan x="12.5" dy="1.5em">&#xF59F;</tspan>
 		</text>
 	</g>
 </svg>
