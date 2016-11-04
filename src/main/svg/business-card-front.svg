@@ -13,6 +13,25 @@
 					xlink:href="../../../target/generated-resources/ttf2svg/PTC55FRegular.svg#PTC55FRegular" />
 			</font-face-src>
 		</font-face>
+		<font-face font-family="RobotoCondensed-Light"
+			unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/RobotoCondensed-Light.svg#RobotoCondensed-Light" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Thin" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Thin.svg#Roboto-Thin" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Light" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Light.svg#Roboto-Light" />
+			</font-face-src>
+		</font-face>
 		<font-face font-family="PT Sans Caption" unicode-range="U+0-7F"
 			font-weight="bold">
 			<font-face-src>
@@ -26,25 +45,36 @@
 					xlink:href="../../../target/generated-resources/ttf2svg/MgOpenCanonicaRegular.svg#MgOpenCanonicaRegular" />
 			</font-face-src>
 		</font-face>
+		<font-face font-family="FontAwesome">
+			<font-face-src>
+				<font-face-uri xlink:href="fontawesome-webfont.svg#FontAwesome" />
+			</font-face-src>
+		</font-face>
 	</defs>
 
 	<!-- Border used for debugging. <rect x="0" y="0" width="3.5in" height="2in" 
 		stroke="black" fill="none" stroke-width="0.01cm" /> -->
 
-	<image xlink:href="logo-with-text.svg" x="2.00in" y="0.1in"
-		width="1.40in" height="0.55in" />
+	<rect x="0" y="124" width="350" height="100" fill="#216978" />
 
-	<image xlink:href="qrcode-vcard.svg" x="2.25in" y="0.750in"
-		width="1.2in" height="1.2in" />
+	<image xlink:href="logo-with-white-text.svg" x="216" y="133.5"
+		width="121.5" height="55" />
 
-	<g font-family="PT Sans Caption" font-size="10pt" fill="black">
-		<text x="0.1in" y="0.750in">
-			<tspan x="0.1in" dy="1em" font-size="12pt" font-weight="bold"
-				font-style="normal" xml:space="preserve">Archimedes Trajano</tspan>
-			<tspan x="0.1in" dy="1.4em" font-size="9pt" xml:space="preserve">IT Consultant/Founder</tspan>
-			<tspan x="0.1in" dy="3.0em">(416) 856-6655</tspan>
-			<tspan x="0.1in" dy="1.2em">www.trajano.net</tspan>
-			<tspan x="0.1in" dy="1.2em">archie@trajano.net</tspan>
+	<g font-family="Roboto-Thin" font-size="36pt" fill="black">
+		<text x="12.5" y="80">archie</text>
+	</g>
+	<g font-family="Roboto-Light" font-size="12pt" fill="black">
+		<text x="12.5" y="115">Archimedes Trajano</text>
+	</g>
+
+	<g font-family="Roboto-Light" font-size="10pt" fill="white">
+		<text x="12.5" y="145">
+			<tspan x="12.5" font-family="FontAwesome">&#xf095;</tspan>
+			<tspan x="34.5">416-856-6655</tspan>
+			<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf003;</tspan>
+			<tspan x="34.5">archie@trajano.net</tspan>
+			<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf0ac;</tspan>
+			<tspan x="34.5">www.trajano.net</tspan>
 		</text>
 	</g>
 </svg>
