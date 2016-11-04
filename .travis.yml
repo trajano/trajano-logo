@@ -2,7 +2,9 @@ language: java
 jdk: oraclejdk8
 sudo: false
 cache:
-- "$HOME/.m2"
+  directories:
+  - $HOME/.m2
+  - $HOME/.sonar/cache
 addons:
   sonarqube: true
 env:
