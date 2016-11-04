@@ -2,44 +2,33 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="11in" height="8.5in" preserveAspectRatio="xMinYMin" viewBox="0 0 1100 850"
+	width="8.5in" height="11in" preserveAspectRatio="xMinYMin" viewBox="0 0 1700 2200"
 	version="1.1">
 
-	<image xlink:href="business-card-front.svg" x="0.5in" y="0.5in"
-		width="3.5in" height="2in" />
+<!-- used the Avery Business Card - Wide, 8 per sheet template http://www.avery.com/avery/en_us/Templates-%26-Software/Templates/Cards/Business-Cards/Business-Card-_-Wide-8-per-sheet-_Adobe-Photoshop.htm?N=4294963735&refchannel=47b62d2fada72210VgnVCM1000002118140aRCRD --> 
+	<image xlink:href="business-card-front.svg" x="98" y="148"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="4in" y="0.5in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="898" y="148"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="7.5in" y="0.5in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="98" y="648"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="0.5in" y="2.55in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="898" y="648"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="4in" y="2.55in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="98" y="1148"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="7.5in" y="2.55in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="898" y="1148"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="0.5in" y="4.60in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="98" y="1648"
+		width="700" height="400" />
 
-	<image xlink:href="business-card-front.svg" x="4in" y="4.6in"
-		width="3.5in" height="2in" />
-
-	<image xlink:href="business-card-front.svg" x="7.5in" y="4.6in"
-		width="3.5in" height="2in" />
-
-	<image xlink:href="business-card-front.svg" x="0.5in" y="6.65in"
-		width="3.5in" height="2in" />
-
-	<image xlink:href="business-card-front.svg" x="4in" y="6.65in"
-		width="3.5in" height="2in" />
-
-	<image xlink:href="business-card-front.svg" x="7.5in" y="6.65in"
-		width="3.5in" height="2in" />
+	<image xlink:href="business-card-front.svg" x="898" y="1648"
+		width="700" height="400" />
 
 
 </svg>

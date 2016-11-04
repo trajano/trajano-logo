@@ -26,6 +26,12 @@
 					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Thin.svg#Roboto-Thin" />
 			</font-face-src>
 		</font-face>
+		<font-face font-family="Roboto-Regular" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Regular.svg#Roboto-Regular" />
+			</font-face-src>
+		</font-face>
 		<font-face font-family="Roboto-Light" unicode-range="U+0-7F">
 			<font-face-src>
 				<font-face-uri
@@ -56,7 +62,8 @@
 	<!-- Border used for debugging. <rect x="0" y="0" width="3.5in" height="2in" 
 		stroke="black" fill="none" stroke-width="0.01cm" /> -->
 
-	<rect x="0" y="124" width="350" height="100" fill="#216978" />
+	<!-- Bottom fill, but expand past the borders a bit to allow for bleed -->
+	<rect x="-20" y="124" width="390" height="100" fill="#216978" />
 
 	<image xlink:href="logo-with-white-text.svg" x="216" y="133.5"
 		width="121.5" height="55" />
@@ -68,17 +75,13 @@
 		<text x="12.5" y="115">Archimedes Trajano</text>
 	</g>
 
-	<g font-family="Roboto-Light" font-size="10pt" fill="white">
+	<g font-family="Roboto-Regular" font-size="10pt" fill="white">
 		<text y="145">
 			<tspan x="34.5">416-856-6655</tspan>
 			<tspan x="34.5" dy="1.5em">archie@trajano.net</tspan>
 			<tspan x="34.5" dy="1.5em">www.trajano.net</tspan>
 		</text>
 	</g>
-	<!-- <g font-family="FontAwesome" font-size="10pt" fill="white"> <text y="145" 
-		text-anchor="middle"> <tspan x="12.5" font-family="FontAwesome">&#xf095;</tspan> 
-		<tspan x="12.5" dy="1.5em" font-family="FontAwesome">&#xf003;</tspan> <tspan 
-		x="12.5" dy="1.5em" font-family="FontAwesome">&#xf0ac;</tspan> </text> </g> -->
 	<g font-family="MaterialDesignIcons" font-size="10pt" fill="white">
 		<text y="145">
 			<tspan x="12.5">&#xF120;</tspan>
