@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="3.5in" height="2.0in" preserveAspectRatio="xMinYMin" viewBox="0 0 350 200"
+	version="1.1">
+
+	<defs>
+		<font-face font-family="PT Sans Caption" unicode-range="U+0-7F"
+			font-weight="normal">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/PTC55FRegular.svg#PTC55FRegular" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="RobotoCondensed-Light"
+			unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/RobotoCondensed-Light.svg#RobotoCondensed-Light" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Thin" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Thin.svg#Roboto-Thin" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Regular" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Regular.svg#Roboto-Regular" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Light" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Light.svg#Roboto-Light" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="PT Sans Caption" unicode-range="U+0-7F"
+			font-weight="bold">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/PTC75FBold.svg#PTC75FBold" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="MgOpen Canonica" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/MgOpenCanonicaRegular.svg#MgOpenCanonicaRegular" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="MaterialDesignIcons">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="materialdesignicons-webfont.svg#Material Design Icons" />
+			</font-face-src>
+		</font-face>
+	</defs>
+
+	<text font-family="RobotoCondensed-Light" font-size="6pt" fill="#333"
+		y="180" text-anchor="middle">
+		<tspan x="175" xml:space="preserve">A <tspan font-family="Roboto-Regular"
+			xml:space="preserve">Polymath (πολυμαθής)</tspan> has expertise that spans a significant number of different</tspan>
+		<tspan x="175" dy="1.5em" xml:space="preserve">subject areas; draws on complex bodies of knowledge to solve specific problems.</tspan>
+	</text>
+</svg>
