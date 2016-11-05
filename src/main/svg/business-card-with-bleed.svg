@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="3.62in" height="2.12in" preserveAspectRatio="xMinYMin" viewBox="0 0 1085 635"
+	version="1.1">
+
+	<!-- used for printers like VistaPrint or eprintfast that has a bleed area -->
+	<!-- Full Bleed Size (starting document size) = 3.62" x 2.12" -->
+	<image xlink:href="business-card-front.svg" x="17.5" y="17.5" width="1050"
+		height="600" />
+
+</svg>

@@ -59,9 +59,6 @@
 		</font-face>
 	</defs>
 
-	<!-- Border used for debugging. <rect x="0" y="0" width="3.5in" height="2in" 
-		stroke="black" fill="none" stroke-width="0.01cm" /> -->
-
 	<!-- Bottom fill, but expand past the borders a bit to allow for bleed -->
 	<rect x="-20" y="124" width="390" height="100" fill="#216978" />
 
@@ -70,11 +67,15 @@
 			height="55" />
 	</g>
 
-	<g font-family="Roboto-Thin" font-size="36pt" fill="black">
-		<text x="12.5" y="80">archie</text>
+	<g transform="translate(12.5, 80)">
+
+		<text font-family="Roboto-Thin" font-size="36pt" fill="black"
+			xml:space="preserve">archie</text>
+
 	</g>
-	<g font-family="Roboto-Light" font-size="12pt" fill="black">
-		<text x="12.5" y="115">Archimedes Trajano</text>
+	<g transform="translate(12.5, 115)">
+		<text font-family="Roboto-Light" font-size="12pt" fill="black"
+			xml:space="preserve">Archimedes Trajano</text>
 	</g>
 
 	<g transform="translate(12.5, 145)">
