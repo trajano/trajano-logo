@@ -1,13 +1,20 @@
 language: java
-jdk: oraclejdk8
+jdk:
+- oraclejdk8
 sudo: false
 cache:
   directories:
-  - $HOME/.m2
-  - $HOME/.sonar/cache
+  - "$HOME/.m2"
+  - "$HOME/.sonar/cache"
 addons:
   sonarqube: true
+install:
+- mvn dependency:go-offline
+script:
+- mvn install site -Dmaven.test.failure.ignore=true
+after_success:
+- mvn sonar:sonar
 env:
   global:
-  - secure: ms12ZMZgvUaAtQVGmft+AVBGwSGOi9Hw8Ckxx9QuU0iELmQ2gXbM6ljaRpp7h6JTy9M53Wl2EFbCuMNKiFPBf1Gg+qtuvuFIvvylJ3tu7eyvT2dSpr/VKTsEyPhvl+akIM/PojqTpLg8nyBT60B8mVCs4tLdo6knzOPpT7x4I8M=
-script: mvn clean install sonar:sonar -Dsonar.login=$SONAR_TOKEN
+  - secure: f02WQDT5cX1r5W4oE7lVpRDmvSbJzl3ZWY2ht8UckK1azOXEo2cx8HkvsYdlqSsE74Maaz6BARpbyMR6KmwLzqwtJtlxHkQd+5poue/XleHDqQk1mXRqXEmdKxQNWX8FH/EW9tdu2P9V7T3XnAaYoaHh2INxlaY8i896y6dHInM=
+  - secure: VELnQnG7J5ZNckHgcJg43hesX+keLLmeqeu/0yRPWrPneCMsUHRcZC6eDPBjpByxHlL9DPA4XKYFlR8V6V0Y0qfAwAuaC5hYfWlmWo5QCVA9tRZFAjAVNVXkrkZ9Vs1xMCNn+PfLo1h4uw5A0TkeYBjOh2pwysHclT9hP4AQJ+M=
