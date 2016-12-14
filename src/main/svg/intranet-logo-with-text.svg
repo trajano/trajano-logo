@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.w3.org/2000/svg http://www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd"
+	width="1211" height="500" preserveAspectRatio="xMinYMin" viewBox="0 0 1211 500"
+	version="1.1">
+
+	<defs>
+		<font-face font-family="MgOpen Canonica" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri xlink:href="../../../target/generated-resources/ttf2svg/MgOpenCanonicaRegular.svg#MgOpenCanonicaRegular" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Light" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Light.svg#Roboto-Light" />
+			</font-face-src>
+		</font-face>
+		<font-face font-family="Roboto-Thin" unicode-range="U+0-7F">
+			<font-face-src>
+				<font-face-uri
+					xlink:href="../../../target/generated-resources/ttf2svg/Roboto-Thin.svg#Roboto-Thin" />
+			</font-face-src>
+		</font-face>
+	</defs>
+	<image xlink:href="intranet-logo.svg" x="0" y="0" width="500" height="500" />
+	<text fill="black" font-size="160px" font-family="MgOpen Canonica"
+		text-anchor="end" x="100%" xml:space="preserve" y="325">T<tspan
+		font-size="135px">RAJANO</tspan></text>
+	<text fill="black" font-size="100" font-family="Roboto-Light"
+		text-anchor="end" x="100%" xml:space="preserve" y="450">DevOps</text>
+</svg>
