@@ -4,14 +4,14 @@
 		xmlns:xlink="http://www.w3.org/1999/xlink"
 		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://www.w3.org/2000/svg http://www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd"
-		width="500"
-		height="286"
-		preserveAspectRatio="xMinYMin"
-		viewBox="0 0 500 286"
+		width="300"
+		height="160"
+		preserveAspectRatio="xMinYMin slice"
+		viewBox="0 0 500 266"
 		version="1.1">
 
 	<defs>
 	</defs>
 	<image xlink:href="logo-with-text.svg" x="0" y="0" width="500" height="207"/>
-	<image xlink:href="maven-logo.svg" x="160" y="200" width="340" height="86"/>
+	<image xlink:href="maven-logo.svg" x="160" y="180" width="340" height="86"/>
 </svg>
