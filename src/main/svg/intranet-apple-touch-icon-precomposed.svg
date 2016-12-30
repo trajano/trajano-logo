@@ -12,6 +12,6 @@
 
 	<defs>
 	</defs>
-	<rect x="0" y="0" width="152" height="152" rx="22" ry="22" fill="#216978" />
+	<rect x="0" y="0" width="152" height="152" fill="#216978" />
 	<image xlink:href="intranet-logo.svg" x="19" y="19" width="114" height="114"/>
 </svg>
