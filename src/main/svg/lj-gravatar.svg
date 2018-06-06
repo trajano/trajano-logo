@@ -12,6 +12,7 @@
 	</defs>
 
 	<image xlink:href="images/gravatar-left.png" x="0" y="0.0" width="200" height="200" />
+<!--	<circle cx="157.5" cy="42.5" fill="white" r="37.5"/>-->
 	<image xlink:href="lj-logo.svg" x="120" y="5" width="75" height="75"/>
 
 </svg>
